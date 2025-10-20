@@ -48,6 +48,8 @@ func interleave64(a, b uint32) uint64 {
 }
 
 // De-Interleave 2 uint64's bit representation.
+//
+//lint:ignore U1000 will use it later
 func deinterleave64(i uint64) uint64 {
 	B := [6]uint64{
 		0x5555555555555555,
